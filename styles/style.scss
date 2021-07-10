@@ -4,16 +4,8 @@
 
 $font: "Cormorant SC", serif;
 $font-stack-text: 400 16px "Cormorant SC", serif;
-/*%title-style {
-    font-family: $font;
-    font-size: 36px;
-    line-height: 32px;
-    font-weight: 400;
-    color: #000000;
-}*/
 body {
     font: $font-stack-text;
-    /*overflow-x: hidden;*/
 }
 header {
     width: 100%;
@@ -239,7 +231,8 @@ header {
 .my-skill__progres-bootstrap:before,
 .my-skill__progres-npm:before,
 .my-skill__progres-bem:before,
-.my-skill__progres-scss:before {
+.my-skill__progres-scss:before,
+.my-skill__progres-git:before {
     content: "";
     position: absolute;
     left: 0;
@@ -267,6 +260,9 @@ header {
 }
 .my-skill__progres-scss:before {
     width: 100%;
+}
+.my-skill__progres-git:before {
+    width: 80%;
 }
 
 .skill-info {
