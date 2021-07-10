@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway+Dots&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+.header {
+	height: 1024px;
+	margin: 0 auto;
+	background-image: url("img/fon.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 16%;
+
+
+}
+.header .banner {
+	height: 1024px;
+	background-color: rgb(0,0,0,.7);
+}
+
+.header  .nav {
+    max-width: 1170px;	
+    margin: 0 auto;
+}
+.header .banner .nav .logo {
+	display: inline-block;
+	font-family: 'Raleway';
+	font-size: 34px;
+	color: #fff;
+	top: 55px;
+}
+.header .banner .nav img {
+	position: relative;
+	top: 20px;
+}
+.header .banner .nav .NavMenu {
+	position: relative;
+	float: right;
+	top: 35px;
+}
+.header .banner .nav .NavBar {
+	
+	
+}
+.header .banner .nav .NavBar li {
+	position: relative;
+float: left;
+padding-right: 30px;
+/*outline: 1px solid #666;*/
+
+}
+.header .banner .nav .NavBar li:nth-child(9) {
+padding-right: 0px;
+}
+
+.header .banner .nav .NavBar li:nth-child(10) {
+padding: 0;
+}
+.header .banner .nav .NavBar li a {
+	color: #fff;
+	    transition: 5.3s ease;
+	text-decoration: none;
+	text-transform: capitalize;
+	font-size: 14px;
+	font-family: 'Montserrat', sans-serif;
+
+}
+.header .banner .nav .NavBar a:hover {
+	color: #c7b299;
+}
+.header .banner .nav .NavBar .flaticon-shopping-bag, .flaticon-magnifying-glass {
+color: #fff;
+    transition: 0.3s ease;
+} 
+.header .banner .nav .NavBar .flaticon-shopping-bag:hover, .flaticon-magnifying-glass:hover {
+color: #c7b299;
+} 
