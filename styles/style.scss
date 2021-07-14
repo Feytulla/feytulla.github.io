@@ -320,6 +320,45 @@ header {
     margin-bottom: 40px;
 }
 
+.nav-filter {
+}
+.nav-filter__items {
+    display: flex;
+    justify-content: center;
+}
+.nav-filter__item {
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.anime {
+    transform: scale(0);
+    opacity: 0;
+    display: none;
+}
+
+.hide {
+    display: none;
+    animation-name: a1;
+    animation-duration: .5s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes a1 {
+    0% {
+        visibility: visible;
+    }
+    100% {
+        display: none;
+        visibility: hidden;
+        min-height: 0;
+        min-width: 0;
+        padding: 0;
+        margin: 0;
+        border: 0;
+        flex-basis: 0;
+    }
+}
 .works__columns {
     display: flex;
     flex-wrap: wrap;
@@ -328,10 +367,12 @@ header {
     margin-bottom: 100px;
 }
 .works__item {
+    display: block;
     position: relative;
     flex-basis: 33.3333%;
     padding: 1rem;
     box-sizing: border-box;
+    transition: all .5s ease;
 
     img {
         max-width: 100%;
