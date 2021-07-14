@@ -405,20 +405,19 @@ header {
 
 .hide {
   display: none;
-  -webkit-animation-name: a1;
-          animation-name: a1;
-  -webkit-animation-duration: .5s;
-          animation-duration: .5s;
+  -webkit-animation-name: hide;
+          animation-name: hide;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
 
-@-webkit-keyframes a1 {
+@-webkit-keyframes hide {
   0% {
     visibility: visible;
   }
   100% {
-    display: none;
     visibility: hidden;
     min-height: 0;
     min-width: 0;
@@ -429,12 +428,11 @@ header {
   }
 }
 
-@keyframes a1 {
+@keyframes hide {
   0% {
     visibility: visible;
   }
   100% {
-    display: none;
     visibility: hidden;
     min-height: 0;
     min-width: 0;
@@ -466,8 +464,8 @@ header {
   padding: 1rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .works__item img {

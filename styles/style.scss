@@ -339,17 +339,16 @@ header {
 
 .hide {
     display: none;
-    animation-name: a1;
-    animation-duration: .5s;
+    animation-name: hide;
+    animation-duration: 0.5s;
     animation-fill-mode: forwards;
 }
 
-@keyframes a1 {
+@keyframes hide {
     0% {
         visibility: visible;
     }
     100% {
-        display: none;
         visibility: hidden;
         min-height: 0;
         min-width: 0;
@@ -372,7 +371,7 @@ header {
     flex-basis: 33.3333%;
     padding: 1rem;
     box-sizing: border-box;
-    transition: all .5s ease;
+    transition: all 0.5s ease;
 
     img {
         max-width: 100%;
