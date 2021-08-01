@@ -165,6 +165,12 @@ header {
   text-transform: uppercase;
 }
 
+#Mine {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
 /* ABOUT */
 .about__contains {
   max-width: 543px;
@@ -882,6 +888,9 @@ svg rect {
   .header-navbar ul a {
     color: #ffffff;
     font-size: 24px;
+  }
+  #Mine {
+    opacity: 0;
   }
   .works__columns {
     -webkit-box-pack: center;

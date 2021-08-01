@@ -1,3 +1,50 @@
+scene = new THREE.Scene();
+camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1500);
+camera.position.z = 1150;
+camera.position.y = 250;
+camera.position.x = -550;
+
+renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+renderer.setClearColor(0x000000, 0);
+renderer.setSize(window.innerWidth, window.innerHeight);
+
+function init() {
+    renderer.setSize(window.innerWidth, window.innerHeight);
+}
+
+window.addEventListener('resize', init);
+
+renderer.domElement.setAttribute("id", "Mine");
+document.body.insertBefore(renderer.domElement, document.body.firstChild);
+
+const aLight = new THREE.AmbientLight(0x404040, 1.2);
+scene.add(aLight);
+
+const pLight = new THREE.PointLight(0xFFFFFF, 1.2);
+pLight.position.set(0, -3, 7);
+scene.add(pLight);
+
+let loader = new THREE.GLTFLoader()
+let obj = null;
+
+loader.load('/scripts/go/scene.gltf', function (gltf) {
+    obj = gltf;
+    obj.scene.scale.set(1.5, 1.5, 1.5);
+
+    scene.add(obj.scene);
+})
+
+function animate() {
+    requestAnimationFrame(animate);
+
+    if (obj) {
+        obj.scene.rotation.y += 0.02;
+    }
+
+    renderer.render(scene, camera);
+}
+animate()
+
 arrowTop.addEventListener('click', backToTop)
 
 function backToTop() {
@@ -41,3 +88,4 @@ document.querySelector('.nav-filter').addEventListener('click', elem => {
         }
     })
 })
+

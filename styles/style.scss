@@ -132,6 +132,11 @@ header {
     box-sizing: border-box;
     text-transform: uppercase;
 }
+#Mine {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
 
 /* ABOUT */
 
@@ -709,6 +714,9 @@ svg rect {
                 font-size: 24px;
             }
         }
+    }
+    #Mine {
+        opacity: 0;
     }
     .works__columns {
         justify-content: center;
