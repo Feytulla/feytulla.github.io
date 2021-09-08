@@ -1,8 +1,8 @@
 scene = new THREE.Scene();
-camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 1500);
-camera.position.z = 1150;
-camera.position.y = 250;
-camera.position.x = -550;
+camera = new THREE.PerspectiveCamera(65, window.innerWidth / window.innerHeight, 0.1, 4500);
+camera.position.z = 2850;
+camera.position.y = -300;
+camera.position.x = -1350;
 
 renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
 renderer.setClearColor(0x000000, 0);
@@ -20,14 +20,14 @@ document.body.insertBefore(renderer.domElement, document.body.firstChild);
 const aLight = new THREE.AmbientLight(0x404040, 1.2);
 scene.add(aLight);
 
-const pLight = new THREE.PointLight(0xFFFFFF, 1.2);
+const pLight = new THREE.PointLight(0xFFFFFF, 7.2);
 pLight.position.set(0, -3, 7);
 scene.add(pLight);
 
 let loader = new THREE.GLTFLoader()
 let obj = null;
 
-loader.load('/scripts/go/scene.gltf', function (gltf) {
+loader.load('/scripts/po/scene.gltf', function (gltf) {
     obj = gltf;
     obj.scene.scale.set(1.5, 1.5, 1.5);
 
