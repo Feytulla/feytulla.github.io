@@ -27,7 +27,7 @@ scene.add(pLight);
 let loader = new THREE.GLTFLoader()
 let obj = null;
 
-loader.load('/scripts/po/scene.gltf', function (gltf) {
+loader.load('/scripts/mario/scene.gltf', function (gltf) {
     obj = gltf;
     obj.scene.scale.set(1.5, 1.5, 1.5);
 
