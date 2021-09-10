@@ -27,7 +27,7 @@ scene.add(pLight);
 let loader = new THREE.GLTFLoader()
 let obj = null;
 
-loader.load('/scripts/face2.gltf', function (gltf) {
+loader.load('/scripts/face3.gltf', function (gltf) {
     obj = gltf;
     obj.scene.scale.set(1.5, 1.5, 1.5);
 
