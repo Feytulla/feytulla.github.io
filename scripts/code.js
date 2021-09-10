@@ -21,13 +21,13 @@ const aLight = new THREE.AmbientLight(0x000000, 0.6);
 scene.add(aLight);
 
 const pLight = new THREE.PointLight(0xFFFFFF, 0.7);
-pLight.position.set(-1.5, 2, 7);
+pLight.position.set(-2, 2, 7);
 scene.add(pLight);
 
 let loader = new THREE.GLTFLoader()
 let obj = null;
 
-loader.load('/scripts/face3.gltf', function (gltf) {
+loader.load('/scripts/face.gltf', function (gltf) {
     obj = gltf;
     obj.scene.scale.set(1.5, 1.5, 1.5);
 
