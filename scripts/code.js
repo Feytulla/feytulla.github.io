@@ -38,7 +38,7 @@ function animate() {
     requestAnimationFrame(animate);
 
     if (obj) {
-        // obj.scene.rotation.y += 0.015;
+        obj.scene.rotation.y += 0.015;
     }
 
     renderer.render(scene, camera);
